@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const db = process.env.MONGO_URI;
-// console.log(db);
+console.log(db);
 
 const connectDB = async () => {
   try {
@@ -12,7 +12,7 @@ const connectDB = async () => {
     console.log('MongoDB Connected...');
   } catch (err) {
     console.error(err.message);
-    process.exit(1);
+    // process.exit(1);
   }
 };
 
